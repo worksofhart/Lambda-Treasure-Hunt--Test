@@ -1,0 +1,7 @@
+curl -X POST -H "Content-Type: application/json" -d '{"username":"testuser", "password1":"testpassword", "password2":"testpassword"}' localhost:8000/api/login/
+
+{"key":"f948125007e93121bcc322d27f4b72a8b292395c"}
+
+curl -X GET -H 'Authorization: Token b916ae0d247f2494f7cadd75ad64274ea4ecf617' localhost:8000/api/adv/init/
+
+curl -X GET -H 'Authorization: Token f948125007e93121bcc322d27f4b72a8b292395c' localhost:8000/api/adv/init/
